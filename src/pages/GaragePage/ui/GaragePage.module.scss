@@ -1,0 +1,16 @@
+@import '@/shared/styles/index.scss';
+
+.main {
+  @extend %bp-width;
+  @extend %flex-col-start-center;
+  gap: 30px;           // slightly larger gap
+  padding: 60px 0;     // more vertical padding
+  background-color: $white-252; // subtle background color
+  border-radius: 12px; // rounded edges for a softer look
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); // soft shadow
+
+  @include max-1(md) {
+    gap: 20px;
+    padding: 40px 0;
+  }
+}

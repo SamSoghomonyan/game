@@ -1,0 +1,18 @@
+@import '@/shared/styles/index.scss';
+
+// form container styles
+.form {
+  // use the shared flex row mixin for centering items at start
+  @extend %flex-row-center-start;
+
+  // spacing between children
+  gap: 15px; // increased gap for a more airy layout
+
+  // add a subtle background and padding
+  background-color: #f8f8f8; // light gray background
+  padding: 12px;
+  border-radius: 8px; // rounded corners
+
+  // add a slight shadow for depth
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
